@@ -14,6 +14,7 @@ grid = function(squaresValue) {
     
     const container = document.querySelector("#container");
     
+    // loop for creating squares.  
     for(i = 0; squaresAmount >= i; i++) {
         const square = document.createElement("div");
         container.appendChild(square);

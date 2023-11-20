@@ -1,8 +1,10 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 0;
+    margin: 20px;
+    align-items: center;
 }
 #container {
     display: flex;
@@ -34,6 +36,15 @@ body {
 }
 #row:hover {
     background-color: black;
-    transition-duration: 0.5s;
+}
 
+button {
+    display: flex;
+    height: 40px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(25, 82, 156);
+    border-radius: 10%;
+    color: whitesmoke;
 }

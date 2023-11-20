@@ -1,5 +1,4 @@
 
-const mouseHover = document.getElementById("container")
 
 grid = function(squaresValue) {
     
@@ -36,3 +35,4 @@ grid = function(squaresValue) {
 }
 
 grid();
+

@@ -31,7 +31,7 @@ body {
    flex: 1;
     background-color: blueviolet;
     height: 50px;   
-    transition-duration: 0.5s;
+    transition-duration: 0.1s;
   
 }
 #row:hover {

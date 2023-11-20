@@ -13,6 +13,8 @@ grid = function(squaresValue) {
         console.log("value of squares " + squaresAmount);
     }
     
+  
+
     const container = document.querySelector("#container");
     
     // loop for creating squares.  
@@ -32,6 +34,29 @@ grid = function(squaresValue) {
     }
     
     
+}
+
+function squarePrompt() {
+    console.log("button was pressed")
+    let userInput = prompt("give a number between 1-100");
+    let value = Number(userInput);
+
+    if(value > 100) {
+        window.alert("number is over 100");
+        return
+    }
+    else if (isNaN(value)) {
+        window.alert("needs to be number")
+        return
+    }
+    else {
+
+        if(document.querySelector("#container")) {
+            container.replaceChildren();
+        }
+
+        grid(value);
+    }
 }
 
 grid();

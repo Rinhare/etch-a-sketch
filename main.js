@@ -1,4 +1,6 @@
 
+const mouseHover = document.getElementById("container")
+
 grid = function(squaresValue) {
     
     let squaresAmount = 0;
@@ -8,7 +10,7 @@ grid = function(squaresValue) {
         console.log("value of squares " + squaresAmount);
     }
     else {
-        squaresAmount = 100;
+        squaresAmount = 5;
         console.log("value of squares " + squaresAmount);
     }
     
@@ -26,7 +28,6 @@ grid = function(squaresValue) {
             const rowSquare = document.createElement("div")
             rowSquare.setAttribute("id", "row" )
             rowSquareSelector.appendChild(rowSquare);
-            // rowSquare.textContent = "test" + j; 
         }
 
     }

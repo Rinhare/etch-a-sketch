@@ -70,9 +70,11 @@ mouseOver.addEventListener(
     "mouseover", (event) => {
 
         if(event.target.id === "row") {
-
+         
+            
         event.target.style.background = getRandomColor();
-        event.target.style.filter = 'brightness(1)'; 
+        // event.target.style.filter = 'brightness(0.5)';
+    
         //resets color back to original
         // setTimeout(() => {
         //     event.target.style.background = "";

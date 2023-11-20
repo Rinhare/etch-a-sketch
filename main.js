@@ -59,5 +59,32 @@ function squarePrompt() {
     }
 }
 
+
+
 grid();
 
+
+const mouseOver = document.getElementById("container");
+
+mouseOver.addEventListener(
+    "mouseover", (event) => {
+
+        if(event.target.id === "row") {
+
+        event.target.style.background = getRandomColor();
+        event.target.style.filter = 'brightness(1)'; 
+        //resets color back to original
+        // setTimeout(() => {
+        //     event.target.style.background = "";
+        // }, 500);
+    }}
+)
+
+function getRandomColor() {
+    let letters = '0123456789ABCDEF';
+    let color = '#'
+    for (let i = 0;i < 6; i++) {
+        color += letters[Math.floor(Math.random()* 16)]
+    }
+    return color; 
+}

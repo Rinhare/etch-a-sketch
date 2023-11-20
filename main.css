@@ -34,9 +34,9 @@ body {
     transition-duration: 0.1s;
   
 }
-#row:hover {
+/* #row:hover {
     background-color: black;
-}
+} */
 
 button {
     display: flex;

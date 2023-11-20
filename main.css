@@ -1,26 +1,28 @@
+
 body {
     display: flex;
+    justify-content: center;
     margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    border: 3px solid black;
-
 }
-
 #container {
     display: flex;
-    justify-content: space-between;
-    background-color: aqua;
-    flex-wrap: wrap;
-    border: 1px solid black;
+    justify-content: center;
+    gap: 1px;
+    height: 95vh;
+    width: 95vw;
 }
 
-div {
+[id^="column-"] {
     display: flex;
     flex: 1;
-    padding: 5px;
+    flex-direction: column;
+    gap: 1px;
     width: 50px;
+}
+
+#row {
+   flex: 1;
+    background-color: blueviolet;
     height: 50px;
-    margin: 5px;
-    flex-grow: 0;
+    
 }
